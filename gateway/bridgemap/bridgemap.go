@@ -15,7 +15,7 @@ import (
 	bsteam "github.com/42wim/matterbridge/bridge/steam"
 	btelegram "github.com/42wim/matterbridge/bridge/telegram"
 	bwhatsapp "github.com/42wim/matterbridge/bridge/whatsapp"
-	bxmpp "github.com/humorhenker/matterbridge/bridge/xmpp"
+	bxmpp "github.com/42wim/matterbridge/bridge/xmpp"
 	bzulip "github.com/42wim/matterbridge/bridge/zulip"
 )
 
