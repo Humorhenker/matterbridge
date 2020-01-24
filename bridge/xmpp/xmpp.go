@@ -11,7 +11,7 @@ import (
 	"github.com/42wim/matterbridge/bridge/config"
 	"github.com/42wim/matterbridge/bridge/helper"
 	"github.com/jpillora/backoff"
-	"github.com/matterbridge/go-xmpp"
+	"github.com/humorhenker/go-xmpp"
 	"github.com/rs/xid"
 )
 
@@ -331,7 +331,7 @@ func (b *Bxmpp) skipMessage(message xmpp.Chat) bool {
 	}
 
 	// skip empty messages
-	if message.Text == "" {
+	if message.Text == "" &&  message.Chatstate == "" {
 		return true
 	}
 
